@@ -18,10 +18,6 @@ This repository contains a Jupyter notebook that demonstrates the use of deep le
 - The learning rate for the model training is scheduled with an exponential decay.
 - The model is compiled using the RMSprop optimizer and binary cross-entropy as the loss function.
 
-## Graphs/Figures
-
-- A count plot is present in the notebook which visualizes the distribution of the "PNEUMONIA" and "NORMAL" classes.
-- Two graphs are plotted to compare training and validation accuracy, as well as training and validation loss.
 
 ## Other Details
 
@@ -58,14 +54,15 @@ Where:
 
 ### Final Classification Layer
 For binary classification, the output probability is given by:
-\[ P(y=1|I) = rac{1}{1 + e^{-z}} \]
+\[ P(y=1|I) = frac{1}{1 + e^{-z}} \]
 Where:
 - \( z = W 	imes I + b \)
 - \( P(y=1|I) \) is the probability of the positive class given the input \( I \).
 
 ### Loss Function (Binary Cross-Entropy)
 The loss function used in this model is binary cross-entropy, given by:
-\[ L(y, \hat{y}) = -\left( y \log(\hat{y}) + (1-y) \log(1-\hat{y}) ight) \]
+\[ L(y, \hat{y}) = -\left( y \log(\hat{y}) + (1-y) \log(1-\hat{y}) 
+ight) \]
 Where:
 - \( y \) is the true label.
 - \( \hat{y} \) is the predicted probability.
